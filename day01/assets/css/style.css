@@ -2,3 +2,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 40px;
 }
+.spaced li {
+    margin-bottom: 20px;
+}
