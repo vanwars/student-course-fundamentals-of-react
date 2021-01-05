@@ -9,6 +9,7 @@
     "react-dom": "16.8.6",
     "react-scripts": "^3.4.4"
   },
+  "homepage": "https://vanwars.github.io/student-course-fundamentals-of-react/day02/card-component",
   "devDependencies": {
     "typescript": "3.3.3"
   },
