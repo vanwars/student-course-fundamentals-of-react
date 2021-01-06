@@ -6,17 +6,17 @@ import notes from "../notes";
 
 class App extends React.Component {
     render() {
-        const noteElements = notes.map((note, i) => (
-            <Note key={i} 
-                title={note.title} 
-                content={note.content} />
-        ));
         return (
             <div class="layout">
                 <Header />
                 <main>
                     <div className="notes">
-                        {noteElements}
+                        {notes.map((note, i) => (
+                            <Note 
+                                key={i} 
+                                title={note.title} 
+                                content={note.content} />
+                        ))}
                     </div>
                 </main>
                 <Footer />
