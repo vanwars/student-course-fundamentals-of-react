@@ -1,0 +1,36 @@
+{
+  "name": "worldnewsorg",
+  "version": "1.0.0",
+  "description": "This is a Rest API for all the world News ",
+  "main": "src/app.js",
+  "engines": {
+    "node": "6.9.0"
+  },
+  "scripts": {
+    "clean": "rm -rf build && mkdir build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon src/app.js --exec babel-node",
+    "build-babel": "babel -d ./build ./src -s",
+    "build": "npm run clean && npm run build-babel",
+    "start": "npm run build && babel-node ./build/app.js"
+  },
+  "author": "Linus okoth",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "mongoose": "^5.11.9",
+    "mongoose-type-email": "^1.1.2",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "nodemon": "^2.0.6"
+  }
+}
